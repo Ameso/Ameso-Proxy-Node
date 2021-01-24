@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:9.6.20-alpine
+    environment:
+      POSTGRES_DB: ameso
+    ports:
+      - "5433:5432"
